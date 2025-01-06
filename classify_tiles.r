@@ -45,8 +45,17 @@ whole_bedpe <- read.table(
 )
 
 
-flag_cis   <- TRUE
-flag_trans <- TRUE
+if(nrow(whole_bedpe[whole_bedpe$chr1 == whole_bedpe$chr2,])>0){
+  flag_cis <- TRUE
+} else {
+  flag_cis <- FALSE
+}
+
+if(nrow(whole_bedpe[whole_bedpe$chr1 != whole_bedpe$chr2,])>0){
+  flag_trans <- TRUE
+} else {
+  flag_trans <- FALSE
+}
 
 
 
@@ -757,10 +766,20 @@ if(flag_trans){
 ##                         Final bedpe                         ##
 #################################################################
 
-final_bedpe <- rbind(
-  final_bedpe_cis,
-  final_bedpe_trans
-)
+if(flag_cis ==T && flag_trans == T){
+  final_bedpe <- rbind(
+    final_bedpe_cis,
+    final_bedpe_trans
+  )
+}
+
+if(flag_cis ==T && flag_trans == F){
+  final_bedpe <- final_bedpe_cis
+}
+
+if(flag_cis ==F && flag_trans == T){
+  final_bedpe <- final_bedpe_trans
+}
 
 
 write.table(
