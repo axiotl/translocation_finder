@@ -311,6 +311,9 @@ if(sample %in% c("SJOS030605-X1_NT_H3K27ac")){
 } else if(sample %in% c("RHB-P3F-463_NT_H3K27ac")) {
   threshold_inter  <- 2
   threshold_intra  <- 2
+} else if(sample %in% c("RHB-P3F-759-X14_NT_H3K27ac")) {
+  threshold_inter  <- 2.5
+  threshold_intra  <- 2.5
 } else {
   threshold_inter <- mean(counts_cis) - 3*sd(counts_cis)
   threshold_intra <- mean(counts_cis) - 1*sd(counts_cis)
@@ -596,6 +599,9 @@ if(sample %in% c("SJOS030605-X1_NT_H3K27ac")){
 } else if(sample %in% c("RHB-P3F-463_NT_H3K27ac")) {
   threshold_inter  <- -2
   threshold_intra  <- -2
+} else if(sample %in% c("RHB-P3F-759-X14_NT_H3K27ac")) {
+  threshold_inter  <- -2.5
+  threshold_intra  <- -2.5
 } else {
   threshold_inter <- mean(counts_cis) - 3*sd(counts_cis)
   threshold_intra <- mean(counts_cis) - 1*sd(counts_cis)
@@ -878,7 +884,10 @@ if(sample %in% c("SJOS030605-X1_NT_H3K27ac")){
 } else if(sample %in% c("RHB-P3F-463_NT_H3K27ac")) {
   threshold_inter  <- -3
   threshold_intra  <- -3
-}else {
+} else if(sample %in% c("RHB-P3F-759-X14_NT_H3K27ac")) {
+  threshold_inter  <- -2
+  threshold_intra  <- -2
+} else {
   threshold_inter <- mean(counts_cis) - 3*sd(counts_cis)
   threshold_intra <- mean(counts_cis) - 1*sd(counts_cis)
 }
