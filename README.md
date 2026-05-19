@@ -10,13 +10,12 @@ A tool for detecting and classifying genomic translocations from H3K27ac HiChIP 
 - [Pipeline Overview](#pipeline-overview)
 - [Output](#output)
 
----
 
 ## About
 
 **Translocation Finder** identifies regions of abnormal chromatin interaction, both interchromosomal (trans) and long-range intrachromosomal (cis), from HiChIP data. Starting from the full genome space, the pipeline progressively refines candidate regions across three tiling rounds (2 Mb → 200 kb → 50 kb), then corrects tile borders and classifies each event into one of three patterns:
 
-- **Gradient:** indicating a translocation, starts with a strong signal (comparable to cis diagonal) that diffuses outwards. 
+- **Gradient:** starts with a strong signal (comparable to cis diagonal) that diffuses outwards. 
 - **Floating diagonal:** signal enriched along a definite diagonal axis.
 - **Uniform:** strong uniform signal.
 
