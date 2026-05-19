@@ -791,7 +791,3 @@ write.table(
   sep = "\t"
 )
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 8dcbf81 (2026 update)
