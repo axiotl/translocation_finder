@@ -256,7 +256,11 @@ command <- paste0(
   "-G ", genome, " ",
   "-Q cpm ",
   "--formula sum ",
+<<<<<<< HEAD
   "-R 100000 > ", file.path(out_dir, "intermediates", paste0(sample, "_cis_2MB-tiles_100kb-res_cpm-counts.bedpe"))
+=======
+  "-r 100000 > ", file.path(out_dir, "intermediates", paste0(sample, "_cis_2MB-tiles_100kb-res_cpm-counts.bedpe"))
+>>>>>>> 8dcbf81 (2026 update)
 )
 system(command)
 
@@ -268,7 +272,11 @@ command <- paste0(
   "-G ", genome, " ",
   "-Q cpm ",
   "--formula sum ",
+<<<<<<< HEAD
   "-R 100000 > ", file.path(out_dir, "intermediates", paste0(sample, "_trans_2MB-tiles_100kb-res_cpm-counts.bedpe"))
+=======
+  "-r 100000 > ", file.path(out_dir, "intermediates", paste0(sample, "_trans_2MB-tiles_100kb-res_cpm-counts.bedpe"))
+>>>>>>> 8dcbf81 (2026 update)
 )
 system(command)
 
@@ -546,7 +554,11 @@ command <- paste0(
   "-G ", genome, " ",
   "-Q cpm ",
   "--formula sum ",
+<<<<<<< HEAD
   "-R 5000 > ", file.path(out_dir, "intermediates", paste0(sample, "_cis_200KB-tiles_5kb-res_cpm-counts.bedpe"))
+=======
+  "-r 5000 > ", file.path(out_dir, "intermediates", paste0(sample, "_cis_200KB-tiles_5kb-res_cpm-counts.bedpe"))
+>>>>>>> 8dcbf81 (2026 update)
 )
 system(command)
 
@@ -558,7 +570,11 @@ command <- paste0(
   "-G ", genome, " ",
   "-Q cpm ",
   "--formula sum ",
+<<<<<<< HEAD
   "-R 5000 > ", file.path(out_dir, "intermediates", paste0(sample, "_trans_200KB-tiles_5kb-res_cpm-counts.bedpe"))
+=======
+  "-r 5000 > ", file.path(out_dir, "intermediates", paste0(sample, "_trans_200KB-tiles_5kb-res_cpm-counts.bedpe"))
+>>>>>>> 8dcbf81 (2026 update)
 )
 system(command)
 
@@ -835,7 +851,11 @@ command <- paste0(
   "-G ", genome, " ",
   "-Q cpm ",
   "--formula sum ",
+<<<<<<< HEAD
   "-R 5000 > ", file.path(out_dir, "intermediates", paste0(sample, "_cis_50KB-tiles_5kb-res_cpm-counts.bedpe"))
+=======
+  "-r 5000 > ", file.path(out_dir, "intermediates", paste0(sample, "_cis_50KB-tiles_5kb-res_cpm-counts.bedpe"))
+>>>>>>> 8dcbf81 (2026 update)
 )
 system(command)
 
@@ -847,7 +867,11 @@ command <- paste0(
   "-G ", genome, " ",
   "-Q cpm ",
   "--formula sum ",
+<<<<<<< HEAD
   "-R 5000 > ", file.path(out_dir, "intermediates", paste0(sample, "_trans_50KB-tiles_5kb-res_cpm-counts.bedpe"))
+=======
+  "-r 5000 > ", file.path(out_dir, "intermediates", paste0(sample, "_trans_50KB-tiles_5kb-res_cpm-counts.bedpe"))
+>>>>>>> 8dcbf81 (2026 update)
 )
 system(command)
 
@@ -1247,3 +1271,7 @@ write.table(
 )
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dcbf81 (2026 update)
